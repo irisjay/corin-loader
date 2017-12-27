@@ -1,4 +1,4 @@
-var _loader_type = (cordova .platformId === 'browser') ? 'browser' : 'cordova';
+var _loader_type = ( typeof (cordova) === 'undefined' || cordova .platformId === 'browser' ) ? 'browser' : 'cordova';
 var _loader;
 var _loader_ok = Promise .resolve ();
 var _loader_on = false;
